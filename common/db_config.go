@@ -2,7 +2,12 @@ package common
 
 import (
 	"database/sql"
+	"log"
+
+	"github.com/fatih/color"
 )
+
+var MyLogger = log.New(color.Output, "", 0)
 
 func NewDatabaseConnection() (*sql.DB, error) {
 	dbDriver := "mysql"
