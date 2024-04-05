@@ -21,6 +21,8 @@ func NewDatabaseConnection() (*sql.DB, error) {
 		return nil, err
 	}
 
+	MyLogger.Println(color.GreenString("DB connected"))
+
 	err = db.Ping()
 	if err != nil {
 		return nil, err
