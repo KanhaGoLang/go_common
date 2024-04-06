@@ -7,7 +7,7 @@ import (
 	"github.com/fatih/color"
 )
 
-var MyLogger = log.New(color.Output, "", 0)
+var MyLogger = log.New(color.Output, "", log.Ldate|log.Ltime|log.Lshortfile)
 
 func NewDatabaseConnection() (*sql.DB, error) {
 	dbDriver := "mysql"
