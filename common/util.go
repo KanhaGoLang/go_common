@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	"github.com/go-playground/validator"
+	"github.com/go-playground/validator/v10"
 )
 
 func HandleError(w http.ResponseWriter, err error, status int) {
