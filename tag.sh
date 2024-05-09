@@ -3,7 +3,7 @@ latestTag=$(git describe --tags --abbrev=0)
 
 # Print the tag
 echo "Latest tag: $latestTag"
-echo -e "\033[33m\nNew tag: $latestTag\033[0m"
+echo -e "\033[33m\nCurreny tag: $latestTag\033[0m"
 
 
 newTag=$(cat version.txt)
